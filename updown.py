@@ -9,7 +9,13 @@ while True:
     count = 0
 
     while True:
-        my_guess = int(input("1~100사이의 숫자를 입력해주세요!"))
+        my_guess = input("1~100사이의 숫자를 입력해주세요!")
+
+        if not my_guess.isdigit():
+            print("숫자를 입력하라구!")
+            continue
+
+        my_guess = int(my_guess)
 
         if my_guess > 100 or my_guess < 1:
             print("1과 100사이라고!!")
