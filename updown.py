@@ -10,9 +10,11 @@ while True:
 
     while True:
         my_guess = int(input("1~100사이의 숫자를 입력해주세요!"))
+
         if my_guess > 100 or my_guess < 1:
             print("1과 100사이라고!!")
             continue
+
         count = count + 1
         print(f"{count}번째 시도입니다!")
         if answer_number == my_guess:
